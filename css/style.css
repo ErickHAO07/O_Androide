@@ -23,9 +23,9 @@
 
 body {
     background-color: #83E0AC;
-    min-width: 300px;
     max-width: 1024px;
     margin: auto;
+    height: auto;
 }
 
 main {
@@ -137,19 +137,28 @@ img {
     color: white;
 }
 
-#vid_youtube {
+#Div_youtube {
     background-color: #195C37;
     width: auto;
     height: auto;
     margin-top: 25px;
-    padding: 15px;
+    padding: 10px;
+
+    @media(max-width:320px) {
+        height: 250px;
+    }
 }
 
-#youtube {
+#Vid_youtube {
     display: block;
     margin: auto;
-    max-height: 500px;
-    max-width: 600px;
+    max-width: 100%;
+    max-height: 400px;
+
+    @media(max-width:320px) {
+        max-height: 250px;
+    }
+
 
 }
 
@@ -165,7 +174,7 @@ p {
 aside {
     background-color: white;
     margin: auto;
-    height: 400px;
+    max-height: auto;
     width: auto;
     padding: 5px;
 
@@ -185,20 +194,18 @@ aside>div {
     background-color: #83E0AC;
     margin: auto;
     border-radius: 10px;
-    max-height: 800px;
+    height: auto;
     width: auto;
 }
 
 aside>div>ul {
     color: black;
-    margin: auto;
     border-radius: 10px;
     height: auto;
     width: auto;
     list-style-position: inside;
     padding: 7px;
     columns: 2;
-    text-align: justify;
     margin: auto;
     list-style: none;
 
@@ -213,8 +220,12 @@ div>ul>li::before {
 aside>div>p {
     padding: 5px;
     color: black;
-    margin-top: 8px;
+    margin-top: px;
     margin-bottom: 5px;
+    font: 1em arial, Helvetica, sans-serif;
+    text-align: justify;
+
+
 }
 
 
@@ -234,11 +245,14 @@ aside>div>p {
 
 footer {
     background-color: white;
-    width: 100%;
-    min-width: 300px;
-    max-width: 1024px;
-    height: auto;
+    padding-top: 10px;
+
+}
+
+#end {
+    background-color: #195C37;
+    text-align: center;
     color: white;
-    margin: auto;
-    padding: 5px
+    font: 1em bold Arial, Helvetica, sans-serif;
+    max-height: auto;
 }
